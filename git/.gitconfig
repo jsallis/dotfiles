@@ -37,6 +37,7 @@
   undo = reset HEAD~1 --soft
   abort = reset HEAD --hard
   pom = push origin master
+  puom = pull origin master
 
   # display files modified in the last commit
   last = "!git pretty-log -1"
