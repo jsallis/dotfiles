@@ -1,0 +1,13 @@
+"*":
+  editor:
+    fontSize: 16
+    fontFamily: "SourceCodePro-Light"
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "56938c3c-c199-2c52-ac7f-e4c3cd3e6393"
+  welcome:
+    showOnStartup: false

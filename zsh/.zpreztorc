@@ -1,0 +1,28 @@
+# color output
+zstyle ':prezto:*:*' color 'yes'
+
+# set the prezto modules to load - order matters!
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'completion' \
+  'prompt' \
+  'git' \
+  'tmux' \
+  'history-substring-search' \
+  'osx' \
+  'ruby' \
+  'syntax-highlighting'
+
+# set the prompt theme to load
+zstyle ':prezto:module:prompt' theme 'sorin'
+
+# auto switch the ruby version on directory change
+zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
+
+# auto start a tmux session when zsh is launched in a local terminal
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'

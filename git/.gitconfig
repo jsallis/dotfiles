@@ -1,0 +1,75 @@
+[user]
+  name = Jason Sallis
+  email = jason@sall.is
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+[push]
+  default = simple
+
+[diff]
+  tool = p4merge
+
+[merge]
+  stat = true
+  tool = p4merge
+
+[difftool]
+  prompt = false
+
+[mergetool]
+  prompt = false
+  keepBackup = false
+  keepTemporaries = false
+
+[mergetool "p4merge"]
+  path = "/Applications/p4merge.app/Contents/MacOS/p4merge"
+
+[alias]
+  a = add
+  c = commit
+  st = status
+  sts = status -s
+  co = checkout
+  discard = checkout --
+  unstage = reset HEAD --
+  undo = reset HEAD~1 --soft
+  abort = reset HEAD --hard
+  pom = push origin master
+
+  # display files modified in the last commit
+  last = "!git pretty-log -1"
+  # display all of my commits from today
+  today = "!git pretty-log --since=midnight --author='Jason Sallis'"
+  # display all commits on current branch since a specific commit
+  since = "!f() { git pretty-log --no-merges \"$(git rev-parse --abbrev-ref HEAD)\" --not $1; }; f"
+
+  # display diff of last commit
+  diffl = diff --cached HEAD^
+  # display diff of commit at a specific revision
+  diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+
+  # display pretty log
+  pretty-log = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad\\%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]"
+  # display pretty log with relative dates
+  l = "!git pretty-log --date=relative"
+  #display pretty log with diff
+  ll = "!git l --patch"
+  # display pretty log with dates
+  ld = "!git pretty-log --date=short"
+  #display pretty log of files changed
+  lf = "!git l --stat"
+  # display pretty log for specic commit
+  lc  = "!f() { git l "$1"^.."$1"; }; f"
+
+  #display pretty graph for current branch
+  g = "!git l --graph"
+  #display pretty graph for all branches
+  ga = "!git g --all"
+
+  # find a file path
+  find = "!git ls-files | grep -i"
+
+  # display all aliases
+  aliases = "!git config --get-regexp alias | cut -c 7- | sort"
