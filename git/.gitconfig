@@ -52,7 +52,7 @@
   diffr  = "!f() { git diff "$1"^.."$1"; }; f"
 
   # display pretty log
-  pretty-log = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad\\%C(red)%d\\ %C(reset)%s\\ %C(blue)[%cn]"
+  pretty-log = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad\\%C(red)%d\\ %C(reset)%s\\ %C(blue)%cn\\ <%ce>"
   # display pretty log with relative dates
   l = "!git pretty-log --date=relative"
   #display pretty log with diff
