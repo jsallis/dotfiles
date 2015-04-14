@@ -99,7 +99,7 @@ let g:ctrlp_show_hidden=1
 nmap <silent> <C-b> :CtrlPBuffer<CR>
 nmap <silent> <C-m> :CtrlPMRUFiles<CR>
 
-"" git-gutter settings
+"" Gitgutter settings
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_sign_added = '✚'
 let g:gitgutter_sign_modified = '✱'
