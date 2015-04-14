@@ -24,7 +24,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'chriskempson/base16-vim'
 Plugin 'editorconfig/editorconfig-vim'
-"Plugin 'gabesoft/vim-ags'
 Plugin 'rking/ag.vim'
 
 call vundle#end()
