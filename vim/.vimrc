@@ -94,10 +94,29 @@ function! FormatBranchName(name)
 endfunction
 
 "" Ctrlp settings
-let g:ctrlp_working_path_mode='ra'
-let g:ctrlp_show_hidden=1
 nmap <silent> <C-b> :CtrlPBuffer<CR>
 nmap <silent> <C-m> :CtrlPMRUFiles<CR>
+let g:ctrlp_working_path_mode='ra'
+if executable('ag')
+  let g:ctrlp_user_command='ag %s --nocolor --ignore-case --files-with-matches
+    \ --ignore .git
+    \ --ignore .hg
+    \ --ignore .svn
+    \ --ignore bower_components
+    \ --ignore node_modules
+    \ --ignore venv
+    \ --ignore Godeps
+    \ --ignore "**/*.pyc"
+    \ --ignore "**/*.DS_Store"
+    \ -g ""'
+  let g:ctrlp_use_caching=0
+else
+  let g:ctrlp_custom_ignore={
+    \ 'dir':  '\v\.(git|hg|svn)$|bower_components$|node_modules$|venv$|Godeps$',
+    \ 'file': '\v\.(pyc|DS_Store)$'
+    \ }
+endif
+
 "" Ag settings
 nnoremap \ :Ag<SPACE>
 
