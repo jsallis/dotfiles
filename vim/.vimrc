@@ -98,6 +98,8 @@ let g:ctrlp_working_path_mode='ra'
 let g:ctrlp_show_hidden=1
 nmap <silent> <C-b> :CtrlPBuffer<CR>
 nmap <silent> <C-m> :CtrlPMRUFiles<CR>
+"" Ag settings
+nnoremap \ :Ag<SPACE>
 
 "" Gitgutter settings
 let g:gitgutter_sign_column_always = 1
