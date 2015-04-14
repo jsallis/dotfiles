@@ -6,7 +6,7 @@
   excludesfile = ~/.gitignore_global
 
 [color "diff"]
-	whitespace = red reverse
+  whitespace = red reverse
 
 [push]
   default = simple
