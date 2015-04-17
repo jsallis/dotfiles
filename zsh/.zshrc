@@ -9,6 +9,8 @@ unsetopt CORRECT
 alias gitg='noglob gg'
 unalias rm
 
+source tmuxp.zsh
+
 delete_all_docker_containers()
 {
   docker stop $(docker ps -a -q)
