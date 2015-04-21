@@ -70,6 +70,9 @@ set laststatus=2               " enable status line
 "" Mouse behaviour
 set mouse=a                    " enable mouse
 
+"" Clipboard behaviour
+set clipboard=unnamed          " integrate with OS clipboard
+
 "" Clear search highlight with F3
 nnoremap <F3> :set hlsearch!<CR>
 
