@@ -68,7 +68,10 @@ set noswapfile
 set laststatus=2               " enable status line
 
 "" Mouse behaviour
-set mouse=a                    " enable mouse
+if has('mouse')
+  set mouse=a                  " enable better mouse integration
+  set ttymouse=xterm2
+endif
 
 "" Clipboard behaviour
 set clipboard=unnamed          " integrate with OS clipboard
