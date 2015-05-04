@@ -26,6 +26,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rking/ag.vim'
 Plugin 'mtth/scratch.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 call vundle#end()
 
