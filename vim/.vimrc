@@ -9,26 +9,36 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-surround'
-Plugin 'bling/vim-airline'
-Plugin 'fatih/vim-go'
-Plugin 'terryma/vim-expand-region'
-Plugin 'tpope/vim-commentary'
-Plugin 'raimondi/delimitmate'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+
+" general environment
 Plugin 'airblade/vim-gitgutter'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'chriskempson/base16-vim'
+Plugin 'bling/vim-airline'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'rking/ag.vim'
-Plugin 'mtth/scratch.vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'majutsushi/tagbar'
+Plugin 'mtth/scratch.vim'
+Plugin 'tpope/vim-fugitive'
+
+" search & navigation
+Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
+
+" editing
+Plugin 'godlygeek/tabular'
+Plugin 'raimondi/delimitmate'
+Plugin 'terryma/vim-expand-region'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+
+" theme
+Plugin 'chriskempson/base16-vim'
+
+" language/framework
+Plugin 'fatih/vim-go'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 
