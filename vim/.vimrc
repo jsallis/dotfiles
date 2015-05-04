@@ -156,6 +156,9 @@ nmap <silent> <C-h> :GitGutterLineHighlightsToggle<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
+"" Scratch settings
+let g:scratch_autohide = &hidden
+
 "" Edit .vimrc
 nmap <silent> <leader>ev :e $HOME/.dotfiles/vim/.vimrc<CR>
 
