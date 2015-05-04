@@ -119,6 +119,7 @@ endfunction
 "" Ctrlp settings
 nmap <silent> <C-b> :CtrlPBuffer<CR>
 nmap <silent> <C-m> :CtrlPMRUFiles<CR>
+nmap <silent> <C-l> :CtrlPTag<CR>
 let g:ctrlp_working_path_mode='ra'
 if executable('ag')
   let g:ctrlp_user_command='ag %s --nocolor --ignore-case --files-with-matches --skip-vcs-ignores
