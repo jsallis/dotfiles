@@ -25,6 +25,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'chriskempson/base16-vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rking/ag.vim'
+Plugin 'mtth/scratch.vim'
 
 call vundle#end()
 
