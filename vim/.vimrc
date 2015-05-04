@@ -28,6 +28,7 @@ Plugin 'rking/ag.vim'
 Plugin 'mtth/scratch.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
@@ -137,6 +138,10 @@ let g:gitgutter_sign_removed = '✖'
 "let g:gitgutter_sign_removed_first_line = '^^'
 "let g:gitgutter_sign_modified_removed = 'ww'
 nmap <silent> <C-h> :GitGutterLineHighlightsToggle<CR>
+
+"" Tagbar settings
+nnoremap <silent> <F9> :TagbarToggle<CR>
+let g:tagbar_autoclose = 1
 
 "" Edit .vimrc
 nmap <silent> <leader>ev :e $HOME/.dotfiles/vim/.vimrc<CR>
