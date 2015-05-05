@@ -7,7 +7,7 @@ fi
 unsetopt CORRECT
 
 alias gitg='noglob gg'
-unalias rm
+alias rm='nocorrect rm'
 
 source tmuxp.zsh
 
