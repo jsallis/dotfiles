@@ -37,6 +37,7 @@ Plugin 'chriskempson/base16-vim'
 " language/framework
 Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
