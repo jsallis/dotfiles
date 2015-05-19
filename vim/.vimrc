@@ -1,53 +1,54 @@
 set nocompatible        " choose no compatibility with legacy vi
-syntax enable
 set encoding=utf-8
 set showcmd             " display incomplete commands
-filetype off            " required for vundle
 
-"" Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"" Plugins (vim-plug)
 
-Plugin 'gmarik/vundle.vim'
+" Install vim-plug if not already installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+
+call plug#begin('~/.vim/bundle')
 
 " general environment
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'majutsushi/tagbar'
-Plugin 'mtth/scratch.vim'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-dotenv'
-Plugin 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'majutsushi/tagbar'
+Plug 'mtth/scratch.vim'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-dotenv'
+Plug 'tpope/vim-fugitive'
 
 " search & navigation
-Plugin 'kien/ctrlp.vim'
-Plugin 'rking/ag.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
 
 " editing
-Plugin 'godlygeek/tabular'
-Plugin 'raimondi/delimitmate'
-Plugin 'terryma/vim-expand-region'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'raimondi/delimitmate'
+Plug 'terryma/vim-expand-region'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 " theme
-Plugin 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 
 " language/framework
-Plugin 'fatih/vim-go'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'rust-lang/rust.vim'
+Plug 'fatih/vim-go'
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'rust-lang/rust.vim'
 
-call vundle#end()
-
-filetype plugin indent on       " load file type plugins + indentation
+call plug#end()
 
 "" Disable Arrow keys
 "inoremap  <Up>     <NOP>
