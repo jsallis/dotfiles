@@ -40,6 +40,7 @@ Plug 'tpope/vim-surround'
 Plug 'chriskempson/base16-vim'
 
 " language/framework
+Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-bundler'
