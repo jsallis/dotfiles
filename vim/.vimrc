@@ -43,6 +43,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
