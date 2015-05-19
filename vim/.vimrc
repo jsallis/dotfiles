@@ -18,6 +18,7 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'majutsushi/tagbar'
 Plugin 'mtth/scratch.vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-dotenv'
 Plugin 'tpope/vim-fugitive'
 
 " search & navigation
