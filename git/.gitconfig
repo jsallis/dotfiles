@@ -75,5 +75,8 @@
   # find a file path
   find = "!git ls-files | grep -i"
 
+  # delete all branches except for current branch
+  dbranch = "!git branch | grep -v \"$(git symbolic-ref --short HEAD)\" | xargs git branch -D"
+
   # display all aliases
   aliases = "!git config --get-regexp alias | cut -c 7- | sort"
