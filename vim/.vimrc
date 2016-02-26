@@ -44,6 +44,7 @@ Plug 'chriskempson/base16-vim'
 " language/framework
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go'
+Plug 'othree/yajs.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
