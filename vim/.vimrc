@@ -15,7 +15,6 @@ call plug#begin('~/.vim/bundle')
 
 " general environment
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'majutsushi/tagbar'
@@ -24,6 +23,8 @@ Plug 'mtth/scratch.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-dotenv'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " search & navigation
 Plug 'kien/ctrlp.vim'
@@ -112,8 +113,8 @@ nmap <silent> <leader>l :set list!<CR>
 "" Airline settings
 let g:airline_right_sep=''
 let g:airline_left_sep=''
-let g:airline_theme='simple'
-let g:airline#extensions#ctrlp#color_template='simple'
+let g:airline_theme='dark'
+let g:airline#extensions#ctrlp#color_template='dark'
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#format='FormatBranchName'
